@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="giphyApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Giphy Generator</title>
+
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/bootstrap.min.js"></script>
+
+    <script src="scripts/gif.module.js"></script>
+    <script src="scripts/gif.config.js"></script>
+    <script src="scripts/random.controller.js"></script>
+    <script src="scripts/search.controller.js"></script>
+
+    <link href="vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Play" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <base href="/">
+  </head>
+  <body>
+
+    <h1>test</h1>
+    <a href="/favorites">F</a>
+    <a href="/search">S</a>
+    <a href="/random">R</a>
+    <ng-view>
+
+    </ng-view>
+  </body>
+</html>
