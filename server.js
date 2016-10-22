@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.use('/favorites/all', favorites);
+app.use('/favorites/list', favorites);
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'public/views/index.html'));
